@@ -9,8 +9,6 @@ USER root
 RUN apt-get update && apt-get -qq install -y \
 	hdf5-tools
 
-USER $NB_UID
-
 RUN pip install --no-cache PyQt5
 
 RUN pip install datascience
@@ -27,3 +25,5 @@ RUN conda clean -tipsy
 #########################
 # course-specific studd
 RUN pip install allensdk
+
+USER $NB_UID
