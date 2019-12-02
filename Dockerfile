@@ -23,7 +23,7 @@ RUN conda remove --quiet --yes --force qt pyqt PyQt5 || true
 RUN conda clean -tipsy
 
 #########################
-# course-specific studd
-RUN pip install allensdk
+# course-specific stuff
+RUN pip install allensdk==1.2.0
 
 USER $NB_UID
