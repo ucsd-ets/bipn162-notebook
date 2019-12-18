@@ -24,6 +24,6 @@ RUN conda clean -tipsy
 
 #########################
 # course-specific stuff
-RUN pip install allensdk==1.2.0
+RUN pip install allensdk==1.3.0
 
 USER $NB_UID
