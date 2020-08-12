@@ -24,5 +24,4 @@ RUN conda clean -tipsy
 
 #########################
 # course-specific stuff
-RUN pip install allensdk==1.3.0 rise==5.6.0 neurosynth==0.3.8
-
+RUN pip install allensdk==2.1.0 rise==5.6.1 neurosynth==0.3.8
