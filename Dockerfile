@@ -12,7 +12,6 @@ RUN apt-get update && apt-get -qq install -y \
 RUN pip install --no-cache PyQt5
 
 RUN pip install datascience
-#RUN pip install --upgrade pip && \
 RUN pip install okpy
 
 # Pre-generate font cache so the user does not see fc-list warning when
@@ -25,4 +24,4 @@ RUN conda clean -tipsy
 
 #########################
 # course-specific stuff
-RUN pip install allensdk==2.1.0 rise==5.6.1 neurosynth==0.3.8
+RUN pip install allensdk==2.1.0 rise==5.6.1 neurosynth==0.3.8 hdmf==1.6.3 pynwb==1.3.2
