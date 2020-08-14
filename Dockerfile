@@ -12,7 +12,8 @@ RUN apt-get update && apt-get -qq install -y \
 RUN pip install --no-cache PyQt5
 
 RUN pip install datascience
-RUN pip install okpy
+RUN pip install --upgrade pip && \
+    pip install okpy
 
 # Pre-generate font cache so the user does not see fc-list warning when
 # importing datascience. https://github.com/matplotlib/matplotlib/issues/5836
