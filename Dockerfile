@@ -7,7 +7,7 @@ USER root
 
 # Debian packages required by course configuration
 RUN apt-get update && apt-get -qq install -y \
-	hdf5-tools
+	hdf5-tools g++
 
 RUN pip install --no-cache PyQt5
 
