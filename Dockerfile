@@ -1,4 +1,4 @@
-ARG BASE_CONTAINER=ucsdets/datascience-notebook:2020.2-stable
+ARG BASE_CONTAINER=ucsdets/datascience-notebook:2021.3-stable
 FROM $BASE_CONTAINER
 
 LABEL maintainer="UC San Diego ITS/ETS <ets-consult@ucsd.edu>"
@@ -24,4 +24,4 @@ RUN conda clean -tipsy
 
 #########################
 # course-specific stuff
-RUN pip install allensdk==2.1.0 rise==5.6.1 neurosynth==0.3.8 hdmf==1.6.3 pynwb==1.3.2
+RUN pip install allensdk==2.12.3 neurosynth==0.3.8 hdmf==1.6.3 pynwb==1.3.2
